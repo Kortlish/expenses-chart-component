@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Frontend Mentor | Expenses chart component</title>
+
+		<link rel="stylesheet" href="./dist/main.css" />
+
+		<script src="data.json" defer></script>
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="my-balance">
+				<div class="my-balance__info">
+					<p>My balance</p>
+					<p class="balance">$921.48</p>
+				</div>
+				<div class="my-balance__image">
+					<img src="./images/logo.svg" alt="" />
+				</div>
+			</div>
+			<div class="main-card">
+				<h3>Spending - Last 7 days</h3>
+				<div class="chart">
+					<div class="chart-single">
+						<div class="chart-single__amount">$3.10</div>
+						<div class="chart-single__block"></div>
+						<div class="chart-single__day">mon</div>
+					</div>
+					<div class="chart-single">
+						<div class="chart-single__amount"></div>
+						<div class="chart-single__block"></div>
+						<div class="chart-single__day">tue</div>
+					</div>
+					<div class="chart-single">
+						<div class="chart-single__amount"></div>
+						<div class="chart-single__block"></div>
+						<div class="chart-single__day">wed</div>
+					</div>
+					<div class="chart-single">
+						<div class="chart-single__amount"></div>
+						<div class="chart-single__block"></div>
+						<div class="chart-single__day">thu</div>
+					</div>
+					<div class="chart-single">
+						<div class="chart-single__amount"></div>
+						<div class="chart-single__block"></div>
+						<div class="chart-single__day">fri</div>
+					</div>
+					<div class="chart-single">
+						<div class="chart-single__amount"></div>
+						<div class="chart-single__block"></div>
+						<div class="chart-single__day">sat</div>
+					</div>
+					<div class="chart-single">
+						<div class="chart-single__amount"></div>
+						<div class="chart-single__block"></div>
+						<div class="chart-single__day">sun</div>
+					</div>
+				</div>
+				<hr />
+				<div class="main-card__footer">
+					<div class="main-card__footer-this">
+						<p>Total this month</p>
+						<span class="total-this-month">$478.33</span>
+					</div>
+					<div class="main-card__footer-previous">
+						<span class="previous-month">+2.4%</span>
+						<p>from last month</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

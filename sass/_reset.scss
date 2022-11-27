@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+ul[class],
+ol[class]
+{
+	list-style: none;
+}
+
+a:not([class])
+{
+	text-decoration-skip-ink: auto;
+}
+
+input,
+button,
+textarea,
+select
+{
+	font: inherit;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #fff;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	font-size: 1.6rem;
+	
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+	*
+	{
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
